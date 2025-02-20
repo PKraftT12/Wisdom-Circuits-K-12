@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+.replit
+.config/
+.upm/
+.cache/
+.npm/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+server/public
+vite.config.ts.*
+*.tar.gz
+
+# Large files
+*.zip
+educational-platform-v1.5.zip
+circuit-platform-backup-*.zip
+
+# Replit specific
+.breakpoints
+.replit
+replit.nix

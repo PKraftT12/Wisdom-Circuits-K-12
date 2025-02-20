@@ -1,0 +1,85 @@
+Subscription & Payment System for Wisdom Circuits
+1. Subscription Plans
+Teachers (Individual)
+
+$99/year per Circuit
+Standard AI usage: 50,000 messages/year included
+Optional AI upgrades per teacher (not per Circuit):
+High-Use: +$99/year (250,000 messages)
+Unlimited: +$299/year (1,000,000 messages)
+No per-student fees
+Immediate access after payment
+Schools & Districts (Bulk Purchase)
+
+Volume discounts on Circuits:
+10-24 Circuits: $89/year each (10% off)
+25-49 Circuits: $84/year each (15% off)
+50-99 Circuits: $79/year each (20% off)
+100+ Circuits: $74/year each (25% off)
+AI usage pooled across all Circuits:
+Standard: 500,000 messages/year (included)
+High-Use: +$999/year (2,500,000 messages)
+Premium: +$4,999/year (10,000,000 messages)
+Unlimited: +$9,999/year
+2. Payment Processing
+Use Stripe for handling payments (one-time & recurring subscriptions).
+Allow credit/debit cards and ACH payments (for schools/districts).
+Generate invoices for school/district purchases.
+Provide auto-renewal for teacher subscriptions (with option to cancel).
+Enable one-time upgrade purchases for AI usage.
+3. User Access & Subscription Management
+For Teachers (Individual Sign-Up)
+
+Upon payment, auto-create teacher account.
+Assign paid Circuit(s) to the teacher's account.
+Upgrade AI usage if an add-on is purchased.
+For Schools/Districts
+
+Admin dashboard to:
+Purchase Circuits in bulk.
+Assign Circuits to teachers via email invitation.
+Monitor AI usage and Circuit allocation.
+Reassign Circuits if a teacher leaves.
+Renewals & Cancellations
+
+Teachers: Auto-renew yearly; cancel anytime.
+Schools/Districts: Manual renewal with invoice reminders.
+4. Admin & Reporting Features
+Admin Panel (for Schools & Districts)
+
+View total Circuits purchased & assigned.
+Monitor AI usage in real-time.
+Reassign Circuits to different teachers.
+Generate and manage invoices.
+Teacher Dashboard
+
+View active Circuits & AI usage.
+Purchase AI usage upgrades.
+Manage auto-renewal settings.
+5. Notifications & Email System
+Upon Signup/Purchase
+
+Email confirmation with account details.
+Receipt for payment.
+Instructions for getting started.
+Renewal Reminders
+
+Teachers: Reminder email before auto-renewal.
+Schools/Districts: 30/15/5-day invoice reminders.
+Usage Alerts
+
+Notify when AI usage is reaching its limit.
+Option to purchase additional AI capacity.
+6. Tech Stack
+Frontend: React.js (for UI)
+Backend: Node.js with Express
+Database: PostgreSQL or Firebase
+Payment Gateway: Stripe API
+Authentication: OAuth (Google/Microsoft for schools) & email/password
+Hosting: Replit or AWS (Lambda for scaling)
+7. Deployment Plan
+Stripe Integration → Setup pricing tiers & payment processing.
+User Subscription Logic → Auto-assign Circuits based on purchase.
+Admin Dashboard for Schools → Enable bulk Circuit purchases & teacher assignment.
+AI Usage Tracking → Implement message limit tracking & alerts.
+Automated Notifications → Emails for purchase confirmations, renewals, and usage alerts.
